@@ -8,7 +8,7 @@
 
     if (!$conn)
     {
-        echo "Error no banco de dados.";
+        echo "Erro no banco de dados.";
         return;
     }
 ?>
