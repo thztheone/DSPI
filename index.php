@@ -15,10 +15,10 @@
 
 
 /* Chrome 10-25, Safari 5.1-6 */
-background: -webkit-linear-gradient(to right, #ee7724, #d8363a, #dd3675, #b44593);
+background: -webkit-linear-gradient(to right, #2453EE, #36D8D0, #36A0DD, #4595B4);
 
 /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-background: linear-gradient(to right, #E724EE, #F183D0, #AE36DD, #b44593);
+background: linear-gradient(to right, #24D0EE, #4A2CCF, #4623E2, #0828DB);
 }
 
 @media (min-width: 768px) {
@@ -47,9 +47,9 @@ border-bottom-right-radius: .3rem;
               <div class="card-body p-md-5 mx-md-4">
 
                 <div class="text-center">
-                  <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-login-form/lotus.webp"
-                    style="width: 185px;" alt="logo">
-                  <h4 class="mt-1 mb-5 pb-1">Nós somos a control</h4>
+                  <img src="LongLogo.png"
+                    style="width: 195px;" alt="logo">
+                  <h4 class="mt-1 mb-5 pb-1">Nós somos a Control</h4>
                 </div>
 
                   <p>Faça o login!</p>
@@ -76,7 +76,7 @@ border-bottom-right-radius: .3rem;
               </div>
             </div>
             <div class="col-lg-6 d-flex align-items-center gradient-custom-2">
-              <div class="text-white px-3 py-4 p-md-5 mx-md-4">
+              <div class="text-black px-3 py-4 p-md-5 mx-md-4">
                 <h4 class="mb-4">Somos mais que uma ideia</h4>
                 <p class="small mb-0">o alisson é meu bahiano favorito o leo é o mordecai mais lindo
                   o gabriel é o nerd mais fofo e eu comeria mto os outros 2 gabrieis.</p>

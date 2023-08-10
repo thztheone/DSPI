@@ -1,6 +1,6 @@
-<nav class="navbar bg-dark border-bottom border-bottom-dark" data-bs-theme="dark">
+<nav class="navbar bg-info-subtle border-bottom border-bottom-dark" data-bs-theme="dark">
     <div class="container-fluid col-lg-6 d-flex align-items-center gradient-custom-2">
-        <img src="https://logos-world.net/wp-content/uploads/2022/01/Jojos-Bizarre-Adventure-anime-Logo-2012.png"
+        <img src="LongLogo.png"
             style="width: 80px;" alt="logo">  
         <a class="navbar-brand">Pagina do Agendamento</a>
         <button class="btn" data-bs-toggle="collapse" 
