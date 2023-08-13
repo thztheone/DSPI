@@ -5,10 +5,11 @@
     <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,200,0,200" />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <link rel="shortcut icon" href="Ìcone_logo.ico" type="image/x-icon" />
    <title>Login</title> 
    <style>
-    body{
-      background-color:#000000;
+    body {
+      background-image: url("carros.jpg");
     }
     .gradient-custom-2 {
 
@@ -35,7 +36,7 @@ border-bottom-right-radius: .3rem;
    </style> 
   </head>
   
-  <body background-color:black>
+  <body>
   <form  action='database/processUser/processLogin.php' method='POST'>
   <section class="h-100 gradient-form" style="background-color: #000000;">
   <div class="container py-5 h-100">
@@ -49,7 +50,7 @@ border-bottom-right-radius: .3rem;
                 <div class="text-center">
                   <img src="LongLogo.png"
                     style="width: 195px;" alt="logo">
-                  <h4 class="mt-1 mb-5 pb-1">Nós somos a Control</h4>
+                  <h4 class="mt-1 mb-5 pb-1">Nós somos a Control Log</h4>
                 </div>
 
                   <p>Faça o login!</p>
@@ -78,8 +79,7 @@ border-bottom-right-radius: .3rem;
             <div class="col-lg-6 d-flex align-items-center gradient-custom-2">
               <div class="text-black px-3 py-4 p-md-5 mx-md-4">
                 <h4 class="mb-4">Somos mais que uma ideia</h4>
-                <p class="small mb-0">o alisson é meu bahiano favorito o leo é o mordecai mais lindo
-                  o gabriel é o nerd mais fofo e eu comeria mto os outros 2 gabrieis.</p>
+                <p class="small mb-0">Atendemos clientes de diversos tamanhos e frota, desde grandes até pequenas empresas, com o intuito de auxiliar e automatizar o processo de gestão de frota interna da sua empresa!</p>
               </div>
             </div>
           </div>
