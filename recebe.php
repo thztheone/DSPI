@@ -18,7 +18,20 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if (isset($_POST["logar"])) {
         $email = $_POST["email"];
         $senha = $_POST["senha"];
-        echo $tst->validarUsuario($email, $senha);
+        echo "Se o resultado for 1 = dados corretos<br>";
+        echo "Resultado: " . $tst->validarUsuario($email, $senha);
+    }
+
+    if (isset($_POST["recebeInfo"])) {
+        $email = $_POST["email"];
+        echo "Informações da conta:<br><br>";
+        print_r($tst->recebeUsuario($email));
+    }
+
+    if (isset($_POST["porCampo"])) {
+        $campo = strtolower($_POST["campo"]);
+        $valor = $_POST["valor"];
+        print_r($tst->recebeUsuarioPorCampo($campo, $valor));
     }
 
 }

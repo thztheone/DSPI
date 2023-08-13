@@ -12,7 +12,7 @@ class Usuario {
             $stmt->bindValue(4, $tel);
             $stmt->bindValue(5, $type);
             $stmt->bindValue(6, $email);
-            $stmt->bindValue(7, $senha);
+            $stmt->bindValue(7, password_hash($senha, PASSWORD_DEFAULT));
             $stmt->execute();
 
             return "Cadastrado com sucesso!";
@@ -32,9 +32,10 @@ class Usuario {
             $stmt = Conexao::getConexão()->prepare($sql);
             $stmt->bindValue(1, $email);
             $stmt->bindValue(2, $senha);
-            $stmt->execute();
-            $result = $stmt->rowCount();
 
+            $stmt->execute();
+            
+            $result = $stmt->rowCount();
             return $result;
         
         } catch (Exception $ex) {
@@ -66,7 +67,7 @@ class Usuario {
 
     public function recebeUsuarioPorCampo($campo, $valor) {
         try {
-            $sql = "SELECT * FROM usuario WHERE $campo LIKE '%$valor%'";
+            $sql = "SELECT * FROM users WHERE $campo LIKE '%$valor%'";
             $stmt = Conexao::getConexão()->prepare($sql);
             $stmt->execute();
 
@@ -84,7 +85,7 @@ class Usuario {
 
     public function recebeUsuarios() {
         try {
-            $sql = "SELECT * FROM usuario";
+            $sql = "SELECT * FROM users";
             $stmt = conexao::getConexão()->prepare($sql);
             $stmt->execute();
 
