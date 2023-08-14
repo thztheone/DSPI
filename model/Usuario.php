@@ -28,14 +28,22 @@ class Usuario {
     public function validarUsuario($email, $senha) {
 
         try {
-            $sql = "SELECT * FROM users WHERE email= ? AND senha= ?";
+            $sql = "SELECT * FROM users WHERE email= ?";
             $stmt = Conexao::getConexão()->prepare($sql);
             $stmt->bindValue(1, $email);
-            $stmt->bindValue(2, $senha);
 
             $stmt->execute();
+
+            $info = $stmt->fetch(PDO::FETCH_BOTH);
+            $cript = $info['senha'];
             
-            $result = $stmt->rowCount();
+            if (password_verify($senha, $cript)) {
+                $result = $stmt->rowCount();
+                return $result;
+            } else {
+                $result = 0;
+            }
+
             return $result;
         
         } catch (Exception $ex) {

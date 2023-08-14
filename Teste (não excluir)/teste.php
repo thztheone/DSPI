@@ -12,7 +12,8 @@ $tst = new Usuario;
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="shortcut icon" href="Ìcone_logo.ico" type="image/x-icon" />
+    <title>Arquivo teste</title>
 </head>
 <body>
     <form method="POST" action="recebe.php">
