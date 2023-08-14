@@ -66,7 +66,7 @@ border-bottom-right-radius: .3rem;
                   </div>
 
                   <div class="text-center pt-1 mb-5 pb-1">
-                  <input class="btn btn-primary w-100 py-2" type="submit" value="login">
+                  <input class="btn btn-primary w-100 py-2" type="submit" name="logar" value="login">
                     <a class="text-muted" href="#!">Esqueceu sua senha?</a>
                   </div>
 
