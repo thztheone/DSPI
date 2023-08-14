@@ -6,9 +6,9 @@ class Control {
      
     public function index() {
         
-        if (isset($_SERVER["REQUEST_METHOD"])) {
+        if ($_SERVER["REQUEST_METHOD"]) == "POST") {
            
-            if ($_POST["email"]) {
+            if (isset($_POST["email"])) {
                 $email = $_POST["email"];
                 $senha = $_POST["senha"];
                 $usuario = new Usuario();
